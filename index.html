@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test CGI</title>
+</head>
+<body>
+    <p>
+        <form action="http://www.sce.carleton.ca/netmanage/mctoolkit/cgi-bin/report.cgi" method="POST">
+        
+        Email: <input type="text" size="35" maxlength="60" name="email"><br>
+        
+        Name: <input type="text" size="15" maxlength="80" name="first_name">
+        Surname: <input type="text" size="20" maxlength="80" name="last_name"><br>
+        
+        Country: <select name="country" size="1">
+        <option>Select a Country </option>
+        <option>Australia </option>
+        <option>Canada </option>
+        <option>France </option>
+        <option>Germany </option>
+        <option>India </option>
+        <option>United States </option>
+        <option>Poland </option>
+        </select><br>
+        
+        Type:<br>
+        
+        Bug <input type="radio" name="bugType" value="bug" checked>
+        Request <input type="radio" name="bugType" value="request"><br>
+        
+        Affected OS:
+        
+        Windows 95 <input type="checkbox" name="affectedOS" value="95">
+        Windows NT <input type="checkbox" name="affectedOS" value="NT">
+        Windows CE <input type="checkbox" name="affectedOS" value="CE"><br>
+        
+        Describe problem: <textarea name="purpose" rows="10" cols="45"></textarea><br>
+        
+        Press to clear: <input type="reset" value="Clear">
+        Press when done: <input type="submit" name="submit" value="Submit"><br>
+        
+        </form>
+</body>
+</html>
